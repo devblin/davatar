@@ -4,11 +4,11 @@ A package to generate avatar for users.
 
 ## Contents
 
-- [Installation](###Installation)
-- [Usage](###Usage)
-- [Tests](###Tests)
-- [Examples](###Examples)
-- [License](###License)
+- [Installation](### Installation)
+- [Usage](### Usage)
+- [Tests](### Tests)
+- [Examples](### Examples)
+- [License](### License)
 
 ### Installation
 
