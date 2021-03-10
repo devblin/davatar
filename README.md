@@ -4,16 +4,16 @@ A package to generate avatar for users.
 
 ## Contents
 
-- Installation
-- Usage
-- Tests
-- Examples
-- License
+- [Installation](###Installation)
+- [Usage](###Usage)
+- [Tests](###Tests)
+- [Examples](###Examples)
+- [License](###License)
 
 ### Installation
 
 ```
-$ npm install davatar
+npm install davatar
 ```
 
 ### Usage
@@ -31,9 +31,9 @@ const image_64 = davatar.generate(64, "Deepanshu Dhruw");
 ### Tests
 
 ```
-$ npm test
+npm test
 ```
 
 ### License
 
-MIT
+[MIT](LICENSE)
