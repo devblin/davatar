@@ -22,6 +22,12 @@ $ npm install davatar
 const davatar = require("davatar");
 ```
 
+Generate 64x64 width avatar:
+
+```js
+const image_64 = davatar.generate(64, "Deepanshu Dhruw");
+```
+
 ### Tests
 
 ```

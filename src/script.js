@@ -1,9 +1,22 @@
 class Davatar {
-	constructor() {
-		this.hello = "davatar";
+	constructor(dimension, text) {
+		this.canvas = document.createElement("canvas");
+		this.canvas.setAttribute("width", dimension);
+		this.canvas.setAttribute("height", dimension);
+		this.name = text;
 	}
+
 	generate = () => {
-		console.log("davatar");
+		console.log(this.#imgBgColor);
+		console.log(this.#imgFontColor);
+	};
+
+	#imgFontColor = () => {
+		return 1;
+	};
+
+	#imgBgColor = () => {
+		return 11;
 	};
 }
 
