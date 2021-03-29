@@ -1,24 +1,27 @@
 {
-	"name": "davatar",
-	"version": "0.1.0",
-	"description": "A package to generate avatar for users.",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/devblin/davatar.git"
-	},
-	"keywords": [
-		"avatar",
-		"user-avatar",
-		"name-avatar"
-	],
-	"author": "Deepanshu Dhruw",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/devblin/davatar/issues"
-	},
-	"homepage": "https://github.com/devblin/davatar#readme"
+  "name": "@devblin/davatar",
+  "version": "0.1.0",
+  "description": "A package to generate avatar for users.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devblin/davatar.git"
+  },
+  "keywords": [
+    "avatar",
+    "user-avatar",
+    "name-avatar"
+  ],
+  "author": "Deepanshu Dhruw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devblin/davatar/issues"
+  },
+  "homepage": "https://github.com/devblin/davatar#readme",
+  "directories": {
+    "test": "test"
+  }
 }
