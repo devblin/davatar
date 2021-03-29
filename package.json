@@ -1,6 +1,6 @@
 {
   "name": "@devblin/davatar",
-  "version": "0.3.0",
+  "version": "0.1.0",
   "description": "A package to generate avatar for users.",
   "main": "index.js",
   "scripts": {
