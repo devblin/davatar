@@ -25,6 +25,7 @@
     "test": "test"
   },
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "canvas": "^2.7.0"
   }
 }
