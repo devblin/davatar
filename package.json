@@ -23,5 +23,8 @@
   "homepage": "https://github.com/devblin/davatar#readme",
   "directories": {
     "test": "test"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
   }
 }
