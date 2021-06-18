@@ -3,8 +3,7 @@
 [![codecov](https://codecov.io/gh/devblin/davatar/branch/main/graph/badge.svg?token=CT23E24A6Z)](https://codecov.io/gh/devblin/davatar)
 [![npm version](https://badge.fury.io/js/davatar.svg)](https://badge.fury.io/js/davatar)
 
-🤡 A package to generate avatar for users.
-
+🤡 An npm package to generate avatar.
 
 [![https://nodei.co/npm/davatar.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/davatar.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/davatar)
 
