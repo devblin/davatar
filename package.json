@@ -1,10 +1,12 @@
 {
 	"name": "davatar",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "A package to generate avatar for users.",
 	"main": "index.js",
+	"type": "module",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "NODE_ENV=test jest",
+		"test-cov": "NODE_ENV=test jest --coverage && codecov"
 	},
 	"repository": {
 		"type": "git",
@@ -22,9 +24,12 @@
 	},
 	"homepage": "https://github.com/devblin/davatar#readme",
 	"directories": {
-		"test": "test"
+		"test": "tests"
 	},
 	"dependencies": {
 		"canvas": "^2.7.0"
+	},
+	"devDependencies": {
+		"jest": "^27.0.4"
 	}
 }
