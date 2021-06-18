@@ -25,7 +25,7 @@ npm install davatar
 ### Usage
 
 *Import module as given below:*
-```javascript=
+```js
 const { davatar } = require("davatar");
 
 /* 1. General method
