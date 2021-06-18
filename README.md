@@ -2,6 +2,7 @@
 
 [![codecov](https://codecov.io/gh/devblin/davatar/branch/main/graph/badge.svg?token=CT23E24A6Z)](https://codecov.io/gh/devblin/davatar)
 [![npm version](https://badge.fury.io/js/davatar.svg)](https://badge.fury.io/js/davatar)
+![npm](https://img.shields.io/npm/dt/davatar)
 
 🤡 An npm package to generate avatar.
 
