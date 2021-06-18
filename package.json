@@ -6,7 +6,7 @@
 	"type": "module",
 	"scripts": {
 		"test": "NODE_ENV=test jest",
-		"test-cov": "NODE_ENV=test jest --coverage && codecov"
+		"test-cov": "NODE_ENV=test jest --coverage"
 	},
 	"repository": {
 		"type": "git",
