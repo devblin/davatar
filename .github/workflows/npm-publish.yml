@@ -13,12 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-      - uses: codecov/codecov-action@v1
         with:
           node-version: 12
       - run: npm ci
       - run: npm run test-cov 
-      - run: codecov --token=${{secrets.CODECOV_TOKEN}}
+      - uses: codecov/codecov-action@v1
 
   publish-npm:
     needs: build
