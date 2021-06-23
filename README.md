@@ -16,58 +16,87 @@
 - [Examples](#examples)
 - [License](#license)
 
-### Installation
+## Installation
 
 ```
 npm install davatar
 ```
 
-### Usage
+## Usage
 
 *Import module as given below:*
 ```js
+/*
+Generated imageDataUrl can be used in <img> tag 
+Or can be viewed directly through browser.
+*/
 const { davatar } = require("davatar");
-
-/* 1. General method
- * Parameters: size (required), text(required), textColor(optional) 
- * backgroundColor(optional)
- */
-const imageDataUrl = davatar.generate({size:50, text:"deepanshu dhruw", textColor:"blue", backgroundColor:"orange"});
-
-/* 2. generate64({text: REQUIRED, textColor: OPTIONAL, backgroundColor: OPTIONAL});
- */
-const imageDataUrl64 = davatar.generate64({text:"deepanshu dhruw"});
-
-/* 3. generate128({text: REQUIRED, textColor: OPTIONAL, backgroundColor: OPTIONAL});
- */
-const imageDataUrl128 = davatar.generate128({text:"deepanshu dhruw"});
-
-//Generated imageDataUrl can be used in <img> tag or viewed directly through browser
+const imageDataUrl50 = davatar.generate({size:50, text:"deepanshu dhruw", textColor:"blue", backgroundColor:"orange"});
 ```
+*Go to generated image-data-URL from the above code in the browser; you'll see the following image:*
 
-### Examples
-
-*Image generated from code usage example:*
-
-- Fixed backgroundColor and textColor:
-
-    ![](https://i.imgur.com/CqlMsOX.png)
-
-- Random backgroundColor and textColor (64x64):
-
-    ![](https://i.imgur.com/4YXo5wr.png)
-
-- Random backgroundColor and textColor (128x128):
-
-    ![](https://i.imgur.com/f7JvxUu.png)
+![](https://i.imgur.com/b3vPzJE.png)
 
 
-### Tests
+### Parameters:
+
+| Parameter                      | Type    | Values                                                                      | Default                      |
+| ------------------------------ | ------- | --------------------------------------------------------------------------- | ---------------------------- |
+| **size**  (Optional)           | Integer | 1 - 512                                                                     | 64                           |
+| **text**  (Required)           | String  | More than 2 characters                                                      |                              |
+| **textColor**  (Optional)      | String  | [Color Format](https://developer.mozilla.org/en-US/docs/Web/CSS/color)      | Random RGB Value              |
+| **backgroundColor** (Optional) | String  | [Color Format](https://developer.mozilla.org/en-US/docs/Web/CSS/color)      | Random RGB Value  |
+| **fontFamily** (Optional)      | String  | [Font Family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) | "Arial"                      |
+| **fontWeight** (Optional)      | Integer | 100 - 900                                                                   | 100                          |
+
+
+## Examples
+
+```js
+const { davatar } = require("davatar");
+const imageProperty = {
+    size: 64,
+    text: "John Doe",
+    textColor: "red",
+    backgroundColor: "green",
+    fontFamily: "monospace",
+    fontWeight: 600
+}
+const imageDataUrl = davatar.generate(imageProperty);
+```
+![](https://i.imgur.com/b0mHn5J.png)
+
+
+---
+
+```js
+const { davatar } = require("davatar");
+const imageProperty = { text: "John Doe" }
+const imageDataUrl = davatar.generate(imageProperty);
+```
+Random `textColor` & `backgroundColor`:
+
+![](https://i.imgur.com/XEEEe03.png)
+
+
+---
+
+```js
+const { davatar } = require("davatar");
+const imageProperty = { size: 128, text: "dd" }
+const imageDataUrl = davatar.generate(imageProperty);
+```
+Random `textColor` & `backgroundColor`:
+
+![](https://i.imgur.com/wHW4DBD.png)
+
+
+## Tests
 
 ```
 npm test
 ```
 
-### License
+## License
 
 [MIT](LICENSE)
