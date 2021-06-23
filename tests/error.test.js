@@ -1,28 +1,48 @@
 const { davatar } = require("../lib/davatar");
 const {
-	NO_SIZE,
 	NO_TEXT,
-	NO_SIZE_TEXT,
 	TEXT_LENGTH,
-	ZERO_SIZE,
+	SIZE_LESS_OR_ZERO,
+	MORE_THAN_MAX,
+	SIZE_NAN,
+	TEXT_NOT_STRING,
 } = require("../lib/helpers/errorConstants");
+const consoleCheck = jest.spyOn(console, "log");
 
-test(NO_SIZE_TEXT, () => {
-	expect(davatar.generate({})).toBe(NO_SIZE_TEXT);
+test(SIZE_NAN, () => {
+	davatar.generate({ text: "dd", size: "22" });
+	expect(consoleCheck).toHaveBeenCalledWith("Davatar: " + SIZE_NAN);
 });
 
-test(NO_SIZE, () => {
-	expect(davatar.generate({ text: "DD" })).toBe(NO_SIZE);
+test(MORE_THAN_MAX, () => {
+	davatar.generate({ text: "dd", size: 600 });
+	expect(consoleCheck).toHaveBeenCalledWith("Davatar: " + MORE_THAN_MAX);
+});
+
+test(SIZE_LESS_OR_ZERO, () => {
+	davatar.generate({ text: "dd", size: 0 });
+	expect(consoleCheck).toHaveBeenCalledWith("Davatar: " + SIZE_LESS_OR_ZERO);
+	davatar.generate({ text: "dd", size: -10 });
+	expect(consoleCheck).toHaveBeenCalledWith("Davatar: " + SIZE_LESS_OR_ZERO);
 });
 
 test(NO_TEXT, () => {
-	expect(davatar.generate({ size: 64 })).toBe(NO_TEXT);
+	davatar.generate();
+	expect(consoleCheck).toHaveBeenCalledWith("Davatar: " + NO_TEXT);
 });
 
 test(TEXT_LENGTH, () => {
-	expect(davatar.generate({ size: 64, text: "2" })).toBe(TEXT_LENGTH);
+	davatar.generate({ text: "d" });
+	expect(consoleCheck).toHaveBeenCalledWith("Davatar: " + TEXT_LENGTH);
 });
 
-test(ZERO_SIZE, () => {
-	expect(davatar.generate({ size: 0, text: "22" })).toBe(NO_SIZE);
+test(TEXT_NOT_STRING, () => {
+	davatar.generate({ text: 2 });
+	expect(consoleCheck).toHaveBeenCalledWith("Davatar: " + TEXT_NOT_STRING);
+});
+
+test(SIZE_NAN, () => {
+	davatar.generate({ size: "" });
+	expect(consoleCheck).toHaveBeenCalledWith("Davatar: " + SIZE_NAN);
+	expect(consoleCheck).toHaveBeenCalledWith("Davatar: " + NO_TEXT);
 });

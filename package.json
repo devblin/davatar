@@ -1,9 +1,8 @@
 {
 	"name": "davatar",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "An npm package to generate avatar.",
 	"main": "index.js",
-	"type": "module",
 	"scripts": {
 		"test": "NODE_ENV=test jest",
 		"test-cov": "NODE_ENV=test jest --coverage"
