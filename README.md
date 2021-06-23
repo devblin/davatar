@@ -12,8 +12,8 @@
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Tests](#tests)
 - [Examples](#examples)
+- [Tests](#tests)
 - [License](#license)
 
 ## Installation
