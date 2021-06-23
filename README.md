@@ -57,7 +57,7 @@ const imageDataUrl50 = davatar.generate({size:50, text:"deepanshu dhruw", textCo
 - [Example-3](#example-3)
 
 #### **EXAMPLE-1**
-
+Generating 64×64 (px) dimension image, with custom parameters:
 ```js
 const { davatar } = require("davatar");
 const imageProperty = {
@@ -75,6 +75,7 @@ const imageDataUrl = davatar.generate(imageProperty);
 
 ---
 #### **EXAMPLE-2**
+Generating default dimension image, with default parameters:
 ```js
 const { davatar } = require("davatar");
 const imageProperty = { text: "John Doe" }
@@ -87,6 +88,7 @@ Random `textColor` & `backgroundColor`:
 
 ---
 #### **EXAMPLE-3**
+Generating 128×128 (px) dimension image, with default parameters:
 ```js
 const { davatar } = require("davatar");
 const imageProperty = { size: 128, text: "dd" }
