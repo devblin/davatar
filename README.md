@@ -52,11 +52,11 @@ const imageDataUrl50 = davatar.generate({size:50, text:"deepanshu dhruw", textCo
 
 ## Examples
 
-- [Example-1](#example:1)
-- [Example-2](#example:1)
-- [Example-3](#example:1)
+- [Example-1](#example-1)
+- [Example-2](#example-2)
+- [Example-3](#example-3)
 
-**EXAMPLE:1**
+#### **EXAMPLE-1**
 
 ```js
 const { davatar } = require("davatar");
@@ -74,7 +74,7 @@ const imageDataUrl = davatar.generate(imageProperty);
 
 
 ---
-**EXAMPLE:2**
+#### **EXAMPLE-2**
 ```js
 const { davatar } = require("davatar");
 const imageProperty = { text: "John Doe" }
@@ -86,7 +86,7 @@ Random `textColor` & `backgroundColor`:
 
 
 ---
-**EXAMPLE:3**
+#### **EXAMPLE-3**
 ```js
 const { davatar } = require("davatar");
 const imageProperty = { size: 128, text: "dd" }
