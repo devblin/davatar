@@ -26,7 +26,8 @@
 		"test": "tests"
 	},
 	"dependencies": {
-		"canvas": "^2.7.0"
+		"canvas": "^2.7.0",
+		"validate-color": "^2.2.1"
 	},
 	"devDependencies": {
 		"jest": "^27.0.4"
