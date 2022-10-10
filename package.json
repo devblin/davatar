@@ -26,9 +26,10 @@
 		"test": "tests"
 	},
 	"dependencies": {
-		"canvas": "^2.7.0"
+		"canvas": "^2.10.1"
 	},
 	"devDependencies": {
+		"@types/node": "^18.8.3",
 		"jest": "^27.0.4"
 	}
 }
