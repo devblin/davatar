@@ -33,9 +33,8 @@ async function run({ page }) {
     return deployedURL
 }
 
-
 async function validate({ page, fetch, expect }) {
-    const data = await run1({ page })
+    const data = await run({ page })
 
     const res = await (await fetch(data)).text()
 
